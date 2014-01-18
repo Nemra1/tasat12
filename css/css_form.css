@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+#contactform {
+	margin:0;
+	padding:5px;
+}
+#contactform * {
+	color:#032a43;
+}
+
+#contactform  select {	/*vasu */
+	color:#032a43;
+	width:285px;
+	border-radius: 4px 4px 4px 4px;
+    box-shadow: 2px 2px 3px #666666;
+	margin: 2px 0;
+	height:30px;
+}
+
+.patronumic{
+	box-shadow: 2px 2px 3px #666666;
+	width:75px;
+	border-radius: 4px 4px 4px 4px;
+	height:30px;
+	padding:5px;
+}
+/*
+#contactform ol {
+	margin:10px 25px;
+	border:1px solid #D6D8D7;
+	//margin:0;
+	padding:5px;
+	border-radius: 4px 4px 4px 4px;
+	list-style:none;
+}*/
+#contactform li {
+	margin:0;
+	padding:0;
+	background:none;
+	border:none;
+	display:block;
+	clear:both;
+}
+#contactform li.buttons {
+	margin:5px 0 5px 0;
+}
+#contactform label {
+	margin:0;
+	width:200px;
+	display:block;
+	padding:10px 0;
+	color:#01111b;
+	text-transform:capitalize;
+	float:left;
+}
+#contactform label span {
+	color:#032a43;
+}
+#contactform input.text {
+	width:280px;
+	 border: 1px solid #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius:10px;
+    border-radius: 10px;
+    -moz-box-shadow: 1px 1px 1px #666;
+    -webkit-box-shadow: 1px 1px 2px #666;
+    box-shadow: 2px 2px 3px #666;
+	margin:2px 0;
+	padding:5px 2px;
+	height:16px;
+	background:#fff;
+	float:left;
+}
+#contactform textarea {
+	width:280px;
+	border:1px solid #c0c0c0;
+	margin:2px 0;
+	padding:2px;
+	background:#fff;
+	float:left;
+	resize:none;
+}
+#contactform li.buttons input {
+	border:1px solid #000;
+	background:#ea7d1b;
+	padding:10px;
+	margin:10px 0 0 110px;
+	color:#fff;
+	float:left;
+
+}
+p.response {
+	text-align:center;
+	color:#F00;
+	
+	line-height:1.8em;
+	width:auto;
+}

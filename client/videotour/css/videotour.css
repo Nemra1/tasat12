@@ -1,0 +1,172 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.box {
+	background-image: url(../images/bg.png);
+	background-repeat: repeat-x;
+	background-color: #FFF;
+	font-family: Tahoma, Arial;
+	font-size: 12px;
+}
+.main {
+	width: 1000px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: none;
+}
+
+.top {
+	height: 95px;
+	padding-left: 15px;
+}
+.play {
+	height: 519px;
+	background-image: url(../images/play-bg.png);
+	background-repeat: no-repeat;
+	padding-top: 12px;
+	padding-right: 33px;
+	padding-left: 33px;
+}
+.player {
+	text-align:center;
+	height: 502px;
+	width: 934px;
+}
+.bar {
+	height: 135px;
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.bar-left, .bar-right {
+	height: 90px;
+	width: 26px;
+	float: left;
+	padding-top: 45px;
+}
+.bar-left a, .bar-right a{
+	cursor:pointer;
+	display:block;
+	width:26px;
+	height:42px;
+}
+.bar-left a{
+	background:url("../images/turn-left.png") center center no-repeat;
+}
+.bar-right a{
+	background:url("../images/turn-right2.png") center center no-repeat;
+}
+.bar-content {
+	float: left;
+	height: 135px;
+	width: 906px;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: default;
+	padding-left: 2px;
+	overflow:hidden;
+}
+.bar-content  ul{
+	list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.bar-content  ul li{
+	float:left;
+}
+.bar-content p {
+	margin-top: 90px;
+	font-size:13px;
+	float: right;
+	margin-right: 15px;
+}
+
+.bar-pic {
+	height: 125px;
+	width: 181px;
+	background-repeat: no-repeat;
+	float: left;
+}
+.nav {
+	height: 50px;
+	width: 960px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 16px;
+	color: #FFF;
+	font-weight: bold;
+}
+.nav-content li {
+	float: left;
+	width: 188px;
+	list-style-type: none;
+	text-align: center;
+	height: 38px;
+	padding-top: 12px;
+	cursor: default;
+}
+
+.nav-left {
+	background-image: url(../images/nav-left.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 50px;
+	width: 10px;
+}
+.nav-content {
+	background-image: url(../images/nav-bg.png);
+	background-repeat: repeat-x;
+	float: left;
+	height: 50px;
+	width: 940px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+.nav-right {
+	background-image: url(../images/nav-right.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 50px;
+	width: 10px;
+}
+.nav-hover {
+	background-image: url(../images/nav-hover.png);
+	background-repeat: no-repeat;
+}
+.nav-standard {
+	background-image: url(../images/nav-standard.png);
+	background-repeat: no-repeat;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
+}
+.nav-standard-hover {
+	background-image: url(../images/nav-standard-hover.png);
+	background-repeat: no-repeat;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.45);
+}
+
+
+.nav-content a {
+	color: #FFF;
+	text-decoration: none;
+}
+.copyright {
+	height: 32px;
+	margin-top: 37px;
+	background-image: url(../images/copyright-bg.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	font-size: 14px;
+	color: #FFF;
+	text-align: center;
+	padding-top: 10px;
+}
+.copyright a {
+	color: #FFF;
+	text-decoration: none;
+}
+.copyright a:hover {
+	color: #FFF;
+	text-decoration: underline;
+}

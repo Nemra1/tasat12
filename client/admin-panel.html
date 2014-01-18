@@ -1,0 +1,213 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Description" content="123 Flash Chat" />
+<meta name="Keywords" content="Chat,123 Flash Chat" />
+<title>123 Flash Chat Version 9.7 Demo</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/ico" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="123flashchat.js"></script>
+</head>
+<body>
+<script type=text/javascript>
+<!--//--><![CDATA[//><!-- 
+function menuFix() { 
+	var sfEls = document.getElementById("daoh").getElementsByTagName("li"); 
+	for (var i=0; i<sfEls.length; i++) { 
+		sfEls[i].onmouseover=function() { 
+			this.className+=(this.className.length>0? " ": "") + "sfhover"; 
+		}
+		
+		sfEls[i].onMouseDown=function() { 
+			this.className+=(this.className.length>0? " ": "") + "sfhover"; 
+		}
+
+		sfEls[i].onMouseUp = function() { 
+			this.className+=(this.className.length>0? " ": "") + "sfhover"; 
+		}
+
+		sfEls[i].onmouseout=function() { 
+			this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"), ""); 
+		}
+	}
+}
+
+window.onload=menuFix; 
+
+//--><!]]>
+</script> 
+<div align="center">
+<!--Main nav -->
+<div class="bobo">
+<!-- space end-->
+</div>
+<div id="header">
+	<div id="logo">
+	<a href="http://www.123flashchat.com" target="_blank"><img src="img/logo.gif" alt="homepage" /></a>
+	</div>
+	
+	<div id="version" align="left">
+	<h2>Version 9.7 Demo</h2>
+	</div>
+	<div id="lianj"> <a href="http://www.123flashchat.com" target="_blank">Home</a>&nbsp;&nbsp;<span class="line">|</span>&nbsp;&nbsp;<a href="http://www.123flashchat.com/quickstart.html" target="_blank">Quick Start</a>&nbsp;&nbsp;<span class="line">|</span>&nbsp;&nbsp;<a href="http://www.123flashchat.com/chat_server_help_intro.html" target="_blank">User Manual</a>&nbsp;&nbsp;<span class="line">|</span>&nbsp;&nbsp;<a href="mailto:support@123flashchat.com" target="_blank">Email Support</a> </div>
+</div>
+
+<div id="nav" align="left">
+
+	<div id="zhong">
+		 <ul id="daoh">
+         <li><a href="videotour/index.html">Video Tour</a></li>
+<li><a href="index.html">Standard Chat Demo </a></li>
+<li><a href="html-chat.html">HTML5 Chat Demo</a></li>
+		<li><a href="advanced-demo.html">Advanced Demo</a></li>
+		<li><a href="admin-panel.html" id="current">Admin Panel</a></li>
+		<li><a href="lite-client.html">Various Chat Clients </a>
+		<ul>
+			<li><a href="facebookbar-chat-demo.html" id="eee">Facebook-like Chat Bar Demo</a></li>
+			<li><a href="lite-client.html">Lite Chat Demo</a></li>
+			<li><a href="avatar-chat.html" >Avatar Chat Demo</a></li>
+			 	
+
+			<li><a href="live-show.html">Live Show Demo</a></li>
+			<li><a href="banner.html" id="ggg">Banner Chat Demo</a></li>
+		</ul>
+		</li>
+		<li><a href="publish-chat.html">Publish Chat</a></li>
+		</ul>
+	</div>
+
+</div>
+
+<div id="main">
+<div id="main1">
+<br />
+
+	<div class="ti_admin">
+	<div class="bobo"><!-- space end--></div>
+	<h2>Introduction</h2>
+	</div>
+<div id="ti2_admin" align="left">
+
+		<div class="panel">
+Here you can configure the chat logo and filter words, manage rooms and admin accounts, ban user or ban IP, make announcements, setup chat robots, and configure the chat modules, etc., and <b>so much more</b> for you to explore!<p>
+Tip: In a chat client, the <b>admin entrance button</b> locates in the top menu, but for security sake it’s invisible until you logging in using an admin account.</p>
+
+		</div>
+		<div class="bobo"><!-- space end--></div>
+	</div>
+<br />
+	<div class="ti_admin">
+	<div class="bobo"><!-- space end--></div>
+	<h2>Admin Panel Demo</h2>
+	</div>
+	<div id="ti2_admin">
+<br />
+<div class="block3">
+  <table width="666" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><div class="adminpw">
+        <div class="adminpwname">Admin Account</div>
+        <div class="adminpwid"><b>Username:</b> admin</div>
+        <div class="adminpwpw"><b>Password:</b> admin</div>
+      </div>
+        </td>
+    </tr>
+  </table>
+</div>
+<div class="bobo"><!-- space end--></div>
+<div style="text-align:center;" >
+    <script language="javascript">
+				var parameters="";
+				if(urlLink==undefined)
+				{
+					var urlLink;
+					try
+					{
+							urlLink=window.location.href;
+					}
+					catch(e)
+					{
+						try
+						{
+							urlLink=document.URL;
+						}
+						catch(e)
+						{
+							urlLink="";
+						}
+					}
+				}
+				if(urlLink.indexOf("?")!=-1)
+				{
+					parameters=urlLink.substring(urlLink.indexOf("?"));
+				}
+				var urlValue="admin_123flashchat.swf"+parameters;
+				loading_bkground="false";
+				openSWF(urlValue,'825','700');
+	 </script>
+	 <noscript>
+	 <DIV id="flashchat">
+     <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,19,0" WIDTH="825" HEIGHT="700" id="topcmm_123flashchat">
+     <PARAM NAME=movie VALUE="admin_123flashchat.swf?loading_bkground=false">
+     <PARAM NAME=quality VALUE="high">
+     <PARAM NAME="menu" value="false">
+     <param name="wmode" value="opaque">
+     <EMBED src="admin_123flashchat.swf?loading_bkground=false" quality=high menu=false WIDTH="825" HEIGHT="700" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" scale="noscale" name="topcmm_123flashchat" swLiveConnect="true"></EMBED>
+   	 </OBJECT>
+   </DIV>
+</noscript>
+</div>
+<br />
+	  </div>
+		
+	<br />
+	<div class="ti_admin">
+	<div class="bobo"><!-- space end--></div>
+	<h2>123 Flash Chat Family Products</h2>
+
+		
+	</div>
+
+
+	<div id="ti3_admin">
+	<br />
+	<table id="ad" style="font-size:12px ">
+      <tr>
+        <td width="25%" align="center"><a href="http://www.123flashchat.com/flash-chat-server-pro.html" target="_blank"><img src="img/ad1.gif" width="50" height="50" /></a></td>
+        <td width="25%" align="center"><a href="http://www.123flashchat.com/web-messenger-chat.html" target="_blank"><img src="img/ad2.gif" width="50" height="50" /></a></td>
+        <td width="25%" align="center"><a href="http://www.123flashchat.com/video-chat.html" target="_blank"><img src="img/ad3.gif" width="50" height="50" /></a></td>
+        <td width="25%" align="center"><a href="http://www.123flashchat.com/live-help-chat" target="_blank"><img src="img/ad4.gif" width="50" height="50" /></a></td>
+      </tr>
+      <tr>
+        <td><a href="http://www.123flashchat.com/flash-chat-server-pro.html" target="_blank">123FlashChat Pro Edition</a></td>
+        <td><a href="http://www.123flashchat.com/web-messenger-chat.html" target="_blank">Web Messenger </a></td>
+        <td><a href="http://www.123flashchat.com/video-chat.html" target="_blank">Video Chat Module </a></td>
+        <td><a href="http://www.123flashchat.com/live-help-chat" target="_blank">Live Help Chat </a></td>
+      </tr>
+      <tr>
+        <td align="left" valign="middle" style="text-align:left; padding:0 18px;">Support multiple chat groups, ideal chat hosting solution.</td>
+        <td align="center" valign="middle" style="text-align:left; padding:0 25px;">Add instant messenger for your websites.</td>
+        <td align="left" valign="middle" style="text-align:left;padding:0 25px;">Video and voice chat module for webcam users. </td>
+        <td align="center" valign="middle" style="text-align:left;padding:0 15px 0 42px;">Live chat solution for e-commerce websites.</td>
+      </tr>
+    </table>
+	<br />
+	</div>
+	<br />
+</div></div>
+
+
+<div id="foot">
+  <div class="bobo">
+    <!-- space end-->
+  </div>
+  <a href="http://www.123flashchat.com" target="_blank">Home</a>&nbsp;&nbsp;<span class="line">|</span>&nbsp;&nbsp;<a href="http://www.123flashchat.com/quickstart.html" target="_blank">Quick Start</a>&nbsp;&nbsp;<span class="line">|</span>&nbsp;&nbsp;<a href="http://www.123flashchat.com/chat_server_help_intro.html" target="_blank">User Manual</a>&nbsp;&nbsp;<span class="line">|</span>&nbsp;&nbsp;<a href="mailto:support@123flashchat.com" target="_blank">Email Support</a>&nbsp;&nbsp;<span class="line">|</span>&nbsp;&nbsp;<a href="http://www.123flashchat.com/support.html" target="_blank">Online Support</a>&nbsp;&nbsp;<span class="line">|</span>&nbsp;&nbsp;<a href="http://www.123flashchat.com/faq.html" target="_blank">FAQ</a>&nbsp;&nbsp;<span class="line">|</span>&nbsp;&nbsp;<a href="http://www.123flashchat.com/buy.html" target="_blank">Get The Full Version</a>&nbsp;&nbsp;<span class="line">|</span>&nbsp;&nbsp;<a href="http://www.123flashchat.com/host.html" target="_blank">Chat Hosting</a>&nbsp;<span class="line">|</span>&nbsp;&nbsp;<a href="http://www.123flashchat.com/update.html?v=9.7" target="_blank">Check Update</a>&nbsp;&nbsp;<span class="line">|</span>&nbsp;&nbsp;<a href="123flashchat-roomlist.html" target="_blank">Chat Rooms</a>&nbsp;&nbsp;<span class="line"> </div>
+<div id="banq">
+<div class="bobo"><!-- space end--></div>
+<h4>Powered by TopCMM Software Corp. </h4>
+</div>
+</div>
+<!--layout end-->
+</body>
+</html>

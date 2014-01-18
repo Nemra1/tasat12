@@ -1,0 +1,52 @@
+1)Using Multiple Selectors
+The Cascade and Specificity
+Always Use Standards Mode
+
+ 2) Layout Techniques#
+The Box Model
+Block versus Inline
+Shorthand versus Longhand CSS
+Float-based Layouts
+Clearing Floats
+
+3). Backgrounds, Borders, and More
+Backgrounds
+Borders
+Rounded Corners
+Values and Units
+Transparency
+Opacity versus Color-based Transparency
+Adding Shadows to Elements
+
+4) Links, Text, and Custom Fonts#
+Styling Links and Text
+Changing Link Color
+Using Custom Web Fonts
+Using @font-face
+Including the Different Font Files
+Generating the Font Files
+@font-face Review
+Using Our New Fonts on RecipeFinder Adding Styles to Text in the Sidebar
+Positioning in CSS
+
+5)Getting Fancy
+Hover Effects
+Transitions
+Vendor Prefixes
+Transforms#
+Defining the Origin of a Transform
+Combining Transitions and Transforms
+Linear Gradients
+Adding More Linear Gradients
+Radial Gradients
+Keyframe Animations
+Graceful Degradation and Page Performance
+Other Cutting-edge Features
+Making RecipeFinder Responsive
+
+6)6. Debugging Your CSS#
+Understand How CSS “Errors” Work
+CSS Comments
+Validating CSS
+CSS Hacks
+Reduced Test Cases

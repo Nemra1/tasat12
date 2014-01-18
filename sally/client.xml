@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FCClient>
+  <!--123 Flash Chat Client Confiugation - Version 9.1.1
+	Note:
+	In Windows, you may open client.xml in notepad to edit client.xml.
+	If you now open it with IE browser, you may check source code by right-click to edit it directly.
+	In Unix, you may use "vi" to edit client.xml.
+
+	After modifying this configuration file, please open it in a browser to test if it can display correctly.
+	If syntax error pop up, please configure it again before launching the chat room. homeUrl
+	Set your homepage address.
+	Then the left-top logo will direct visitors to your homepage in a new browser window .
+	If left blank, the link on logo will be disabled.-->
+  <homeUrl value="http://www.123flashchat.com"></homeUrl>
+  <!-- helpUrl
+	The URL of the help file of your flash client.
+	When clicking the right-top "help" button, this help page will pop up in a new browser window.-->
+  <helpUrl value="help/index.html"></helpUrl>
+  <!-- registerUrl
+	Specify null for this parameter unless you're authorizing users by external database.
+	In your fcserver.xml, if the value of integrated-other-database is not "None",
+	then you must have integrated your own user database.
+	In this case, please enter register URL in your system here.-->
+  <registerUrl value=""></registerUrl>
+  <!-- copyright
+	Set your company copyright information, which will display in about window,
+        Note: It can't be changed until you purchase the chat server license. -->
+  <copyright value="Copyright 2001-2012 TopCMM Software Corp.  All Rights Reserved."></copyright>
+  <!-- loadRootPath
+	Defines the directory where you've located the Language and skin folders. Usually you just leave it blank.
+	But if you put them on another server, please set it to http://url/
+	eg: http://www.123flashchat.com/chat/
+	Don't forget the "/" at the end. -->
+  <loadRootPath value=""></loadRootPath>
+  <!-- language
+	Choose interface language from our collection. In current version, we provide following languages:
+	1) en - English (default)
+	2) zh-CN - Simplified Chinese
+	3) zh-TW - Traditional Chinese
+	4) nl - Dutch
+	5) fr - French
+	6) ja - Japanese
+	7) es - Spanish
+	8) de - German
+	9) it - Italian
+	10)hu - Hungarian
+	11)ru - Russian
+	12)hr - Croatian
+	13)tr - Turkey
+	14)ar - Arabic
+	15)pt - PORTUGUES
+	16)ko - Korean
+	17)serbian - Serbian
+	18)pl - Polish
+	19)no - Norwegian
+	20)farsi - Farsi
+	21)el - Greek
+	22)iceland - Iceland
+	23)cs - Czech
+	24)da - Danish
+	25)fi - Finnish
+	26)sv - Swedish
+	Note: the language files are located under folder: <loadRootPath>/lang/
+	You can also translate it into your own language and save it as language_***.xml. Put it into the same folder and edit client.xml, then you get a local version of 123flashchat.
+
+	language value can either be defined to "*" or a definite language name.
+	If "*", it will automatically detect the language of every user's Operating System and assign a corresponding language to user from the existing language collection.
+	If a definite language name, it will only directly load the specified language instead of detecting user's OS language.
+	-->
+  <language value="*"></language>
+  <!-- skin
+	We offer following skins:
+	1) default - Professional skin design.
+	2) standard - Aqua blue skin. scalable vector skin.
+	3) beige - Aqua beige skin. scalable vector skin.
+	4) angel - Black metallic bitmap skin. kinda cool.
+	5) hawaii - Aqua black skin. scalable vector skin.
+	6) classic - Blue bitmap skin.
+	7) green - Green skin. scalable vector skin.
+	8) red - Red& black skin. scalable vector skin.
+	9) orange - Orange skin. scalable vector skin.
+	10) clean - Aqua blue & gray skin. scalable vector skin.
+	You can design a new skin based on our skins.
+	Here're some tutorials might be helpful to designers:
+	a) HowTo customize skin? http://www.123flashchat.com/howtoskin.html
+	b) HowTo change skin color? http://www.123flashchat.com/colormap.html
+	c) HowTo change background? http://www.123flashchat.com/howto_change_bkground.html
+	-->
+  <skin value="default"></skin>
+  <!-- profileUrl
+	Normally you just leave it as default "false" to disable this function.
+	But if you've already integrated your own database with the chat system,
+        and you want the user profile to be linked, you can set profile URL here.
+	Then by activating a user from user list, a small menu will popup,
+	clicking the "profile" from the menu, you'll be directed to his or her profile page in a new browser window.
+	eg: http://yourwebsite/profile.php?user=%USER%
+	Note: you can add more than one item in profileUrl tag, for instance, one for profile, one for photo link.
+	by the way, it's %USER%, not %username%.
+	-->
+  <profileUrl enable="false">
+    <item name="Profile" url="http://yourwebsite/profile.php?user=%USER%"></item>
+  </profileUrl>
+  <!-- enableRoomSounds
+	Default sound setting in chat room.
+	enable it by "true", disable it by "false".
+	Default value is "true".
+	-->
+  <enableRoomSounds value="true"></enableRoomSounds>
+  <!-- enterRoomSound
+	Choose whether or not to play a sound alert when anyone enters the room you're in.
+	Default value is "true",  which is also default value for all of your members.
+	Your members can set their preferences in option panel.
+	-->
+  <enterRoomSound value="false"></enterRoomSound>
+  <!-- messageSound
+	Choose whether or not to play a sound alert when receiving a message.
+	Default value is "true",  which is also default value for all of your members.
+	Your members can set their preferences in option panel.
+	-->
+  <messageSound value="true"></messageSound>
+  <!-- typingSound
+	Choose whether or not to play sound when typing messages.
+	Default value is "false", which is also default value for all of your members.
+	Your members can set their preferences in option panel.
+	-->
+  <typingSound value="false"></typingSound>
+  <!-- sendingSound
+	Choose whether or not to play a sound alert when sending a message.
+	Default value is "true" , which is also default value for all of your members.
+	Your members can set their preferences in option panel.
+	-->
+  <sendingSound value="false"></sendingSound>
+  <!-- quitRoomSound
+	Choose whether or not to play a sound alert when someone quits a room.
+	Default value is "true", which is also default value for all of your members.
+	Your members can set their preferences in option panel.
+	-->
+  <quitRoomSound value="false"></quitRoomSound>
+  <!-- parseURL
+	To define if the URL in messages clickable.
+	If "true", then the valid URL, a string with "http://" or "www.*****"(which is 9 characters at least)will become blue , underlined and linked to the specified URL.
+	Default value is "true",  which is also default value for all of your members.
+	Your members can set their preferences in option panel.
+	-->
+  <parseURL value="true"></parseURL>
+  <!-- autoSaveUsername
+        Set to save chatter's username in cache automatically by "true".
+	Default value is "true", which is also default value for all of your members.
+	Your members can set their preferences in option panel.
+	-->
+  <autoSaveUsername value="true"></autoSaveUsername>
+  <!-- autoSavePassword
+        Set to save member's password in cache automatically by "true".
+	Default value is "false", which is also default value for all of your members.
+	Your members can set their preferences in option panel.
+	-->
+  <autoSavePassword value="false"></autoSavePassword>
+  <!-- autoSaveAvatarFonts
+        Set to save chatter's avatar, font style and color in their cache automatically by "true".
+	Default value is "true", which is also default value for all of your members.
+	Your members can set their preferences in option panel.
+	-->
+  <autoSaveAvatarFonts value="true"></autoSaveAvatarFonts>
+  <!-- autoSaveBKGround
+        Set to save chat space background in users' cache automatically by "true".
+	Default value is "true", which is also default value for all of your members.
+	-->
+  <autoSaveBKGround value="true"></autoSaveBKGround>
+  <!-- visibleGuestCheckbox
+	Set if the combination of "guest" and the checkbox before "guest" is visible to all users.
+	Default value is "true".
+	-->
+  <visibleGuestCheckbox value="true"></visibleGuestCheckbox>
+  <!-- visiblePasswordInput
+	Set if the password input field is visible to all users.
+	Default value is "true".
+	-->
+  <visiblePasswordInput value="true"></visiblePasswordInput>
+  <!-- visibleLogoutButton
+	Set if the logout button is visible to all users.
+	Default value is "true".
+	-->
+  <visibleLogoutButton value="true"></visibleLogoutButton>
+  <!-- defaultSelectGuest
+	Select if the guest is checked as default and password input area is removed.
+	Default value is "false".
+	-->
+  <defaultSelectGuest value="false"></defaultSelectGuest>
+  <!-- enablePrivateChat
+	Enable or disable private chat mode for ordinary users here,
+	remember: administrator can always activate private chat with normal users, not controlled by this value.
+	Default value is "true".
+	-->
+  <enablePrivateChat value="true"></enablePrivateChat>
+  <!-- acceptPrivateMessage
+	user can accept private message or not, default value is "true".
+	-->
+  <acceptPrivateMessage value="true"></acceptPrivateMessage>
+  <!-- lockAdminIcon
+	Set if the administrator has a unique reserved icon (a small person with coffee) before their messages.
+	it's not refering to the icon before admin in user list.
+	Default value is "true".
+	-->
+  <lockAdminIcon value="false"></lockAdminIcon>
+  <!-- messageSpacing
+	You can set the spacing between two messages here.
+	Default value is "5", unit: pixel.
+	-->
+  <messageSpacing value="5"></messageSpacing>
+  <!-- maxScollHeight
+	Max height of the text field in chat window.
+	Default value is "2000", unit: pixel.
+	-->
+  <maxScollHeight value="2000"></maxScollHeight>
+  <!-- messageHistorySize
+	To allocate space to record chat history. Please set default space size here for all your members.
+	unit: kb, 	default value is "100".	-->
+  <messageHistorySize value="100"></messageHistorySize>
+  <!-- showGuestMemberonlyRoom
+	To define if the member-only room is viewable to guests in room list. Default value is "true".
+	-->
+  <showGuestMemberonlyRoom value="true"></showGuestMemberonlyRoom>
+  <!-- visibleWelcomeMessage
+	To define whether or not to display admin auto-welcome message when anyone enters the chatroom. Default value is "true".
+	-->
+  <visibleWelcomeMessage value="true"></visibleWelcomeMessage>
+  <!-- visibleExitMessage
+	To define whether or not to display admin auto message when anyone leaves the chatroom. Default value is "true".
+	-->
+  <visibleExitMessage value="true"></visibleExitMessage>
+  <!-- visibleRoomList
+	To display room list or hide it. Default value is "true".
+	-->
+  <visibleRoomList value="true"></visibleRoomList>
+  <!-- advertisingBanner
+	You can insert one or more rotate ad banners in your chat client.
+	by default it's diabled by "false".
+        you can set enable="true" to activate the feature.
+        the "src=" is the relative or absolute path of the banner.
+        detailed instruction on ad banner, please refer to:
+	http://www.123flashchat.com/howto_advertising_banner.html
+       	-->
+  <advertisingBanner height="60" width="468" enable="false">
+    <banner duration="8" src="ad/banner1.jpg" href="http://www.123flashchat.com"></banner>
+    <banner duration="5" src="ad/banner2.jpg" href="http://www.123flashchat.com/host.html"></banner>
+    <banner duration="5" src="ad/banner3.swf" href="http://www.123flashchat.com/howto_advertising_banner.html"></banner>
+    <banner duration="15" src="ad/banner4.swf" href="http://www.123livehelp.com"></banner>
+    <banner duration="10" src="ad/banner5.swf" href="http://www.123flashchat.com/123webmessenger-feature.html"></banner>
+  </advertisingBanner>
+  <!-- visibleChangeRoomComboBox
+	Indicates whether the pull-down room menu in a chat room is visible or not. Default value is "true".
+	-->
+  <visibleChangeRoomComboBox value="true"></visibleChangeRoomComboBox>
+  <!-- visibleExitRoomButton
+	Add or remove an exit room button at the right top. Default value is "true".
+	-->
+  <visibleExitRoomButton value="true"></visibleExitRoomButton>
+  <!-- adminAutoGreet
+	The greetings (robot)admin gives to visitors automatically, display one by one.
+	You can add as many lines as you want to make it look like real person, or disable this feature by setting it "false".
+	by default it's "false".
+	-->
+  <adminAutoGreet enable="false">
+    <item value="Hello %YOURNAME%, I'm %MYNAME% from support team, how may I help you?"></item>
+    <item value="Hi %YOURNAME%, what do you need?"></item>
+    <item value="Welcome to join us,  %YOURNAME% !"></item>
+  </adminAutoGreet>
+  <!-- visibleHelpButton
+	Add or remove the Help button from the top menu.
+        Default value is "true".
+	-->
+  <visibleHelpButton value="true"></visibleHelpButton>
+  <!-- visibleOptionButton
+	Add or remove the Option button from the top menu.
+        Default value is "true".
+	-->
+  <visibleOptionButton value="true"></visibleOptionButton>
+  <!-- visibleAvatarButton
+	Add or remove the Smiley button from the middle menu above the input area.
+        Default value is "true".
+	-->
+  <visibleAvatarButton value="true"></visibleAvatarButton>
+  <!-- visibleBButton
+	Add or remove the B button from the middle menu above the input area to enable or disable the bold font feature.
+        Default value is "true".
+	-->
+  <visibleBButton value="true"></visibleBButton>
+  <!-- visibleIButton
+	Add or remove the I button from the middle menu above the input area to enable or disable the italic font feature.
+        Default value is "true".
+	-->
+  <visibleIButton value="true"></visibleIButton>
+  <!-- visibleUButton
+	Add or remove the U button from the middle menu above the input area to enable or disable the underline font feature.
+        Default value is "true".
+	-->
+  <visibleUButton value="true"></visibleUButton>
+  <!-- visibleColorButton
+	Add or remove the Color picker button from the middle menu above the input area to enable or disable the font color feature.
+        Default value is "true".
+	-->
+  <visibleColorButton value="true"></visibleColorButton>
+  <!-- visibleSelectSmileyButton
+	Add or remove the smiley button from the middle menu above the input area to enable or disable the emotion feature.
+        Default value is "true".
+	-->
+  <visibleSelectSmileyButton value="true"></visibleSelectSmileyButton>
+  <!-- visibleSelectBgButton
+	Add or remove the BG button from the middle menu above the input area to enable or disable the change chat background feature.
+        Default value is "true".
+	-->
+  <visibleSelectBgButton value="true"></visibleSelectBgButton>
+  <!-- idleDisconnectTime
+	When a user is "idle" in chat room for a predefined time,
+	his connection will be automatically cut and he will be kicked out of the room.
+        This time period can be defined here by admin, by default it's "0", means to disable this feature,
+        and the users won't be kicked no matter how long he stays without saying or doing anything.
+        measurement units: minute.
+        -->
+  <idleDisconnectTime value="0"></idleDisconnectTime>
+  <!-- visibleTimeStamp
+	Display the timestamp in all users' chat windows. By default is set to "false"
+        Users can enable or disable this feature by themselves in the option panel.
+        -->
+  <visibleTimeStamp value="false"></visibleTimeStamp>
+  <!-- predefineMessage
+	Frequently used messages can be easily added to/removed from the predefined section to save time,
+	they can be easily copied into chat by double-click.
+	By default is set to "true"
+	-->
+  <predefineMessage enable="true">
+    <msg value="Hello"></msg>
+    <msg value="Hi, there!"></msg>
+    <msg value="How are you doing?"></msg>
+    <msg value="How have you been?"></msg>
+    <msg value="Haven't seen you for ages!"></msg>
+    <msg value="Where have you hidden those days? "></msg>
+    <msg value="What's up? "></msg>
+    <msg value="What's happening? "></msg>
+    <msg value="What's new?"></msg>
+    <msg value="Doing good thanks, what about yourself?"></msg>
+    <msg value="Not too bad, and you?"></msg>
+    <msg value="Amazing!"></msg>
+    <msg value="Great!"></msg>
+    <msg value="I'm doing great."></msg>
+    <msg value="Couldn't be better!"></msg>
+    <msg value="Just so so."></msg>
+    <msg value="I miss you so much."></msg>
+    <msg value="I love you."></msg>
+    <msg value="Got to go"></msg>
+    <msg value="Talk to you soon."></msg>
+    <msg value="See you later."></msg>
+    <msg value="Catch you later!"></msg>
+    <msg value="Bye."></msg>
+  </predefineMessage>
+  <!-- openPrivateMsgInWindow
+	Whether or not to open each private message in a new browser window and the size of it. 
+	By default it's disabled by value "false".
+	-->
+  <openPrivateMsgInWindow height="400" width="475" enable="false"></openPrivateMsgInWindow>
+  <!-- flashEmotion
+	Animated emotions can be chosen and appeared to the chat lobby or private chat. 
+	The recipient in private chat, or all users in lobby, can click "play" to enjoy the specific flash.
+	by default it's "true", means the emotion button will be visible to all users.
+	
+	item
+	  name: Emotion name
+	  src:  flash file location
+	  thumb: thumbnail location 
+	  duration: animation duration(seconds).
+	-->
+  <flashEmotion col="7" enable="true" autoPlay="false" row="4">
+    <item duration="12" name="Smile" src="flashemotion/swf/smile.swf" thumb="flashemotion/thumb/smile.swf"></item>
+    <item duration="7" name="Vomit" src="flashemotion/swf/vomit.swf" thumb="flashemotion/thumb/vomit.swf"></item>
+    <item duration="7" name="Spicy Food" src="flashemotion/swf/spicy.swf" thumb="flashemotion/thumb/spicy.swf"></item>
+    <item duration="9" name="Sleepy" src="flashemotion/swf/zzz.swf" thumb="flashemotion/thumb/zzz.swf"></item>
+    <item duration="4" name="Shock" src="flashemotion/swf/shock.swf" thumb="flashemotion/thumb/shock.swf"></item>
+    <item duration="24" name="Walk a Dog" src="flashemotion/swf/walk.swf" thumb="flashemotion/thumb/walk.swf"></item>
+    <item duration="10" name="Photo" src="flashemotion/swf/photo.swf" thumb="flashemotion/thumb/photo.swf"></item>
+    <item duration="19" name="Hammock" src="flashemotion/swf/hammock.swf" thumb="flashemotion/thumb/hammock.swf"></item>
+    <item duration="4" name="Greedy" src="flashemotion/swf/greedy.swf" thumb="flashemotion/thumb/greedy.swf"></item>
+    <item duration="5" name="Fairy" src="flashemotion/swf/fairy.swf" thumb="flashemotion/thumb/fairy.swf"></item>
+    <item duration="10" name="Happy Birthday" src="flashemotion/swf/birthday.swf" thumb="flashemotion/thumb/birthday.swf"></item>
+    <item duration="8" name="Cheer up" src="flashemotion/swf/cheerup.swf" thumb="flashemotion/thumb/cheerup.swf"></item>
+    <item duration="18" name="Cry" src="flashemotion/swf/cry.swf" thumb="flashemotion/thumb/cry.swf"></item>
+    <item duration="10" name="Angry" src="flashemotion/swf/angry.swf" thumb="flashemotion/thumb/angry.swf"></item>
+    <item duration="5" name="Knives" src="flashemotion/swf/knives.swf" thumb="flashemotion/thumb/knives.swf"></item>
+    <item duration="9" name="Laugh" src="flashemotion/swf/laugh.swf" thumb="flashemotion/thumb/laugh.swf"></item>
+    <item duration="6" name="Kiss" src="flashemotion/swf/kiss.swf" thumb="flashemotion/thumb/kiss.swf"></item>
+    <item duration="10" name="Swing" src="flashemotion/swf/swing.swf" thumb="flashemotion/thumb/swing.swf"></item>
+    <item duration="8" name="Moon" src="flashemotion/swf/moon.swf" thumb="flashemotion/thumb/moon.swf"></item>
+    <item duration="4" name="Break Up" src="flashemotion/swf/break_up.swf" thumb="flashemotion/thumb/break_up.swf"></item>
+    <item duration="3" name="Proposal" src="flashemotion/swf/proposal.swf" thumb="flashemotion/thumb/proposal.swf"></item>
+    <item duration="7" name="Kiss behind Curtain" src="flashemotion/swf/curtainkiss.swf" thumb="flashemotion/thumb/curtainkiss.swf"></item>
+    <item duration="8" name="Phone Bill" src="flashemotion/swf/phone_bill.swf" thumb="flashemotion/thumb/phone_bill.swf"></item>
+    <item duration="8" name="Poker" src="flashemotion/swf/poker.swf" thumb="flashemotion/thumb/poker.swf"></item>
+    <item duration="12" name="Thinking" src="flashemotion/swf/think.swf" thumb="flashemotion/thumb/think.swf"></item>
+    <item duration="7" name="Sunset" src="flashemotion/swf/sunset.swf" thumb="flashemotion/thumb/sunset.swf"></item>
+    <item duration="9" name="Fight" src="flashemotion/swf/fight.swf" thumb="flashemotion/thumb/fight.swf"></item>
+    <item duration="12" name="Cookie Girl" src="flashemotion/swf/cookie.swf" thumb="flashemotion/thumb/cookie.swf"></item>
+  </flashEmotion>
+  <!--
+	Restrict the max number of smileys in each message.
+	value="0" means no restrict
+	-->
+  <showSmileLimit value="5"></showSmileLimit>
+  <fontSizeList default="12" value="10,11,12,13,14,15,16,18,20,22" enable="true"></fontSizeList>
+  <sendSound enable="true" autoPlay="true">
+    <item name="Gasp for supprise" src="flashsound/gasp.mp3"></item>
+    <item name="Giggle" src="flashsound/hehe.mp3"></item>
+    <item name="Say hello" src="flashsound/hello.mp3"></item>
+    <item name="Come on" src="flashsound/hurry.mp3"></item>
+    <item name="Kick somebody out" src="flashsound/kick.mp3"></item>
+    <item name="Kiss somebody" src="flashsound/kiss.mp3"></item>
+    <item name="Scream" src="flashsound/scream.mp3"></item>
+    <item name="Yawn for sleepy" src="flashsound/yawn.mp3"></item>
+    <item name="Snoring" src="flashsound/zzz.mp3"></item>
+  </sendSound>
+  <visibleHandWritingButton value="true"></visibleHandWritingButton>
+  <visibleTyping value="true"></visibleTyping>
+  <visibleIdle value="true"></visibleIdle>
+  <visibleFontList value="true"></visibleFontList>
+  <visiblePersonalMsg value="true"></visiblePersonalMsg>
+  <visibleWhisperMsg value="true"></visibleWhisperMsg>
+  <visiblePrivateCloseNotice value="false"></visiblePrivateCloseNotice>
+  <maxMessageLength value="256"></maxMessageLength>
+  <maxPostRow value="5"></maxPostRow>
+  <defaultChatTheme displayAvatar="0" value="bubble" singleLine="true"></defaultChatTheme>
+  <codeShared accessUrl="" enable="true"></codeShared>
+  <profileSetting enablePopupProfilePanelOnMouseOver="true" guestNamePrefix="guest" notifyChangeAvatarSetting="true" avatarPanelMode="false" guestNotifyProfileSetting="true" enableChangeNickName="true"></profileSetting>
+  <visibleSkinChange value="true"></visibleSkinChange>
+  <videoLayout value="popuptop"></videoLayout>
+  <userListLayout value="right"></userListLayout>
+  <userListSortType value="0"></userListSortType>
+  <userListMenuMode value="0"></userListMenuMode>
+  <acceptPrivateMessageOfFriendList value="true"></acceptPrivateMessageOfFriendList>
+  <acceptPrivateMessageOfRegisterUser value="true"></acceptPrivateMessageOfRegisterUser>
+  <visibleYouTubeButton value="true"></visibleYouTubeButton>
+  <defaultDisplayUserList value="true"></defaultDisplayUserList>
+  <displayAvatarInInputPanel value="true"></displayAvatarInInputPanel>
+  <userListAvatarType value="0"></userListAvatarType>
+  <openPrivateChatType value="0"></openPrivateChatType>
+  <enableUsernameSameColorWithMessage value="false"></enableUsernameSameColorWithMessage>
+  <mobileAppSettings chatid="1">
+    <ios displayButton="On" url="http://itunes.apple.com/us/app/123flashchat/id517139646?ls=1&amp;mt=8"></ios>
+    <android displayButton="On" url="https://play.google.com/store/apps/details?id=air.com.topcmm.A123flashchat"></android>
+  </mobileAppSettings>
+  <visibleHistoryButton value="true"></visibleHistoryButton>
+    <translation enable="on" key="AIzaSyDX5ka2KhEp-2tBOlimg3Qk_XhRMoLivMA" version="2.0" url="http://server.mangium.com/get_translate.php">
+    <item name="Chinese" value="zh-CN"></item>
+    <item name="RUSSIAN" value="ru"></item>
+    <item name="English" value="en"></item>
+    <item name="SPANISH" value="es"></item>
+  </translation>
+</FCClient>
+

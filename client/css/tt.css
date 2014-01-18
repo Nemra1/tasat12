@@ -1,0 +1,164 @@
+
+#daoh { 
+	list-style-type: none;
+	padding: 0; margin: 0;
+} 
+
+#daoh a { 
+	font-size:12px;
+	display: block;
+	width: 131px;
+	line-height: 30px;
+	text-align:center; 
+	text-decoration:none;
+} 
+#daoh a:link { 
+	color:#2F3336;
+	text-decoration:none; 
+} 
+
+#daoh a:visited { 
+	color:#2F3336;
+	text-decoration:none;
+} 
+
+#daoh a:hover { 
+	color:#FF6F12;
+	text-decoration:none;
+	font-weight:bold;
+} 
+
+#daoh li { 
+	float: left; width: 131px;
+
+} 
+
+#daoh li a#bobo { 
+	width:69px;
+	height:24px;
+	border-right:1px solid #268DC8;
+} 
+
+#daoh li a#current {
+        background: url(../img/bg_7.gif);
+	text-decoration: none;
+	color:#fff;
+	font-weight:bold;
+
+}
+
+#daoh li a:hover{ 
+	text-decoration: none;
+	font-weight:normal;
+        background: url(../img/bg_7.gif);
+} 
+
+#daoh li ul { 
+	padding: 0; margin: 0;
+	list-style-type: none;
+	left: -999em;
+	width: 131px;
+	position: absolute; 
+} 
+#daoh li ul li{ 
+	float: left;
+	width: 131px;
+        background: #0E3368;
+}
+
+
+#daoh li ul a{ 
+	display: block;
+	width: 131px;
+	height: 25px;
+	line-height: 25px;
+	text-align:left;
+	text-indent:16px; 
+}
+
+#daoh li ul a#eee { 
+
+	display: block;
+	width: 164px;
+	height: 27px;
+	line-height: 27px;
+	text-align:left;
+	text-indent:16px; 
+        background: url(../img/bg8.gif);
+}
+
+#daoh li ul a#ggg { 
+
+	display: block;
+	width: 164px;
+	height: 27px;
+	line-height: 27px;
+	text-align:left;
+	text-indent:16px; 
+        background: url(../img/bg9.gif);
+}
+
+#daoh li ul a:link { 
+	color:#2F3336;
+	text-decoration:none; 
+}
+#daoh li ul a:visited { 
+	color:#2F3336;
+	text-decoration:none; 
+}
+
+#daoh li ul a:hover { 
+	color:#FF6600; 	width: 164px;
+	text-decoration:none;
+	font-weight:normal; 
+        background: url(../img/bg7b.gif);
+}
+
+#daoh li ul a#eee:hover { 
+	color:#FF6600;
+	text-decoration:none; 	width: 164px;
+	font-weight:normal; 
+        background: url(../img/bg8b.gif);
+}
+
+#daoh li ul a#ggg:hover { 
+	color:#FF6600;
+	text-decoration:none; 	width: 164px;
+	font-weight:normal; 
+        background: url(../img/bg9b.gif);
+}
+
+
+#daoh li:hover ul { 
+	left: auto; 
+} 
+#daoh li.sfhover ul { 
+	left: auto; 
+}
+
+#nav {
+	margin: 0 auto;
+	width:980px;
+	height: 30px;
+        background: url(../img/bg_3.jpg);
+}
+#zhong {
+	width:950px;
+	float:left;
+	height: 30px;
+}
+
+#content { 
+	clear: left; 
+} 
+
+#jiao1 {
+	width:15px;
+	height: 30px;
+	float:left;
+}
+#jiao2 {
+	width:15px;
+	height: 30px;
+	float:left;
+}

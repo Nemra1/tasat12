@@ -1,0 +1,88 @@
+select tip.it_first_name, tip.it_last_name, tip.user_id_fk, tip.it_about, tip.it_country, tul.user_type,
+	   tul.user_id_pk,
+	   tue.`user_expertise_id_pk`, tue.`user_id_fk`, tue.`expertise_id_fk`
+from tbl_it_profile as tip
+inner join tbl_user_list as tul
+on tul.user_id_pk=tip.user_id_fk and tul.user_type='2'
+left join tbl_user_expertise as tue
+on tue.user_id_fk=tip.user_id_fk
+where tip.it_country='fr'
+SELECT * FROM `tbl_expertise_detail`as t1,`tbl_expertise` as t2, `tbl_user_expertise` as t3 WHERE t1.`user_expertise_id_fk`=t3.`user_expertise_id_pk` AND t3.expertise_id_fk=t2.expertise_id_pk
+AND t1.expertise_domain='Legal'
+///////////////
+SELECT * FROM `tbl_expertise_detail`as t1,`tbl_expertise` as t2, `tbl_user_expertise` as t3, tbl_it_profile as t4 WHERE t1.`user_expertise_id_fk`=t3.`user_expertise_id_pk` AND t3.expertise_id_fk=t2.expertise_id_pk AND
+t4.user_id_fk=t3.user_id_fk AND t1.`expertise_domain` = 'Finance' AND t2.`expertise_name` = 'Written Translation' 
+/////////////////////
+SELECT * FROM `tbl_expertise_detail`as t1,`tbl_expertise` as t2, `tbl_user_expertise` as t3, tbl_it_profile as t4, tbl_tc_profile as t5 WHERE t1.`user_expertise_id_fk`=t3.`user_expertise_id_pk`
+AND t3.expertise_id_fk=t2.expertise_id_pk AND
+t4.user_id_fk=t3.user_id_fk and
+t1.`expertise_domain` = 'Legal' AND t2.`expertise_name` = 'Written Translation' AND t1.`expertise_source` = 'English' AND t1.`expertise_target` = 'Russian'
+ORDER BY t3.user_id_fk DESC
+
+
+SELECT DISTINCT t3.user_id_fk,t1.`user_expertise_id_fk`,t3.`user_expertise_id_pk`,t3.expertise_id_fk, t1.`expertise_source`,t1.`expertise_target`, t1.`expertise_domain`,t2.`expertise_name` FROM `tbl_expertise_detail`as t1,`tbl_expertise` as t2, `tbl_user_expertise` as t3, tbl_it_profile as t4, tbl_tc_profile as t5 WHERE t4.user_id_fk=t3.user_id_fk AND t2.`expertise_name` = 'Written Translation' ORDER BY t3.user_id_fk DESC
+
+
+SELECT t3.user_id_fk,t1.`user_expertise_id_fk`,t3.`user_expertise_id_pk`,t3.expertise_id_fk, t1.`expertise_source`,t1.`expertise_target`, t1.`expertise_domain`,t2.`expertise_name` FROM `tbl_expertise_detail`as t1,`tbl_expertise` as t2, `tbl_user_expertise` as t3, tbl_it_profile as t4, tbl_tc_profile as t5 WHERE t1.`user_expertise_id_fk`=t3.`user_expertise_id_pk` AND t3.expertise_id_fk=t2.expertise_id_pk AND t4.user_id_fk=t3.user_id_fk AND t2.`expertise_name` = 'Simultaneous Translation' ORDER BY t3.user_id_fk DESC
+
+
+///////////////////
+SELECT *
+FROM tbl_bid_request as tbr
+INNER JOIN tbl_user_list as tul
+ON tul.user_id_pk=tbr.translator_user_id and tul.user_id_pk=134
+////////////////
+select *
+from tbl_bid_request as tbr
+inner join tbl_user_list as tul
+on tul.user_id_pk=tbr.translator_user_id and tbr.client_id_fk='134'
+///////////////
+
+        
+        
+       // SELECT DISTINCT t3.user_id_fk,t1.`user_expertise_id_fk`,t3.`user_expertise_id_pk`,t3.expertise_id_fk, t1.`expertise_source`,t1.`expertise_target`, t1.`expertise_domain`,t2.`expertise_name`,t4.it_country, t4.it_first_name, t4.it_last_name
+//FROM `tbl_expertise_detail`as t1,
+//`tbl_expertise` as t2,
+//`tbl_user_expertise` as t3,
+//tbl_it_profile as t4,
+//tbl_tc_profile as t5
+//WHERE t1.`user_expertise_id_fk`=t3.`user_expertise_id_pk` 
+//AND t3.expertise_id_fk=t2.expertise_id_pk 
+//AND t4.user_id_fk=t3.user_id_fk 
+//AND t1.`expertise_domain` = 'Legal'
+//AND t2.`expertise_name` = 'Written Translation'
+//AND t1.`expertise_source` = 'English' AND t1.`expertise_target` = 'French'
+// AND t4.`it_country` = 'France'
+//ORDER BY t3.user_id_fk DESC
+       // echo @$query="SELECT * FROM `tbl_expertise_detail`as t1,`tbl_expertise` as t2, 
+         //        `tbl_user_expertise` as t3".$query['where'];
+        //$resq=  $this->db->query($query);
+        //echo @$q="SELECT * FROM `tbl_it_profile` AS it, `tbl_tc_profile` as tc 
+               // WHERE it.user_id_fk='' tc.".$query1['where1'];
+        ///////////////////////////////////////////////////////////////////////////////////
+27112013
+SELECT distinct t4.user_id_fk,t1.expertise_domain,t1.expertise_source,t1.expertise_target,
+                               t2.expertise_name, tpl.pref_status, tpl.translator_id
+               FROM `tbl_expertise_detail`as t1, `tbl_expertise` as t2, `tbl_user_expertise` as t3,
+                     tbl_it_profile as t4, tbl_user_list as tul, tbl_countries as tcount , tbl_preferred_list as tpl
+               WHERE t1.`user_expertise_id_fk`=t3.`user_expertise_id_pk` AND t3.expertise_id_fk=t2.expertise_id_pk 
+                     AND t4.user_id_fk=t3.user_id_fk AND t4.user_id_fk=tul.user_id_pk 
+                     AND tcount.ctrycode=t4.it_country AND t4.user_id_fk= tpl.translator_id"
+                     .$query['where']."ORDER BY t4.user_id_fk DESC
+///////////////////////////////////
+select distinct tip.`user_id_fk`, tip.`it_first_name`, tip.`it_last_name`, tip.`it_about`,tc.`country_name`, tpl.`pref_status`,
+				tue.expertise_id_fk,tue.user_expertise_id_pk, te.expertise_name,ted.expertise_domain,ted.expertise_source,ted.expertise_target
+from tbl_it_profile as tip
+left join tbl_preferred_list as tpl
+on tpl.translator_id=tip.user_id_fk
+left join tbl_user_expertise as tue
+on tip.user_id_fk=tue.user_id_fk
+left join tbl_expertise as te
+on te.expertise_id_pk=tue.expertise_id_fk
+left join tbl_expertise_detail as ted
+on ted.user_expertise_id_fk=tue.user_expertise_id_pk
+inner join tbl_countries as tc
+on tip.it_country=tc.ctrycode
+where te.expertise_name='Written Translation'
+
+        

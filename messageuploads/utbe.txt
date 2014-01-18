@@ -1,0 +1,97 @@
+http://www.youtube.com/watch?v=P2PgQwYUTQM
+http://www.youtube.com/watch?v=BSi4iUlzBiU
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+<!--<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>-->
+<link rel="stylesheet" type="text/css" href="<?php echo WEB_PATH; ?>css/jquery-ui-1.10.3.custom.css"/>
+<div>
+    <table cellspacing="0" cellpadding="0" border="0" class="scroller" >
+        <thead>
+            <tr class="quicklinks">
+            </tr>
+        </thead>
+    </table>
+</div>
+<div>
+    <form action="<?php echo WEB_URL; ?>cmessages/saveMessage" method="POST" >
+        <div class="sent"><p><b>Send To </b></p></div>
+
+        <div class="sendto">
+            <input type="radio" name="gen" id="gen1"  value="client" class="users"/>Client
+            <input type="radio" name="gen" id="gen2"  value="translator" class="users"/>Translator
+            <input type="radio" name="gen"  id="gen3" value="tasat" class="users"/>TASAT
+
+        </div>          
+        <div><p><b>User Name</b></p></div>
+        <div class="cn">
+            
+        <select name="username" id="username">
+                        <option value="all">All</option>
+                        <option value="written">written translation</option>
+                        <option value="simultaneous">simultaneous</option>
+                        <option value="consequential"> consequential </option></select>
+        </div>
+
+        <div class="p"><p><b>Project Name </b></p></div>
+        <div class="pn">
+            <input type="text" class="text" name="proname" id="proname" />
+        </div>
+
+        <div class="msg">
+            <p><b> Message </b></p>          
+        </div>
+        <div class="message"> <textarea name="messages" cols="33" rows="5" style="resize:none;"></textarea></div> 
+
+
+        <div class="attach">
+            <p>Add Files<input type="file" name="messagefile"/></p>
+            <div class="send">
+                <p><input type="submit" class="button" value="Send" /></p>
+            </div>
+        </div>
+    </form>
+
+
+</div>
+</div>
+</div>
+<script>
+                $(document).ready(function() {
+
+                    var a =<?php echo $type; ?>;
+                    alert(a);
+                    if (a == 1) {
+                        $("#gen1").attr('disabled', true);
+                    }
+                    if(a==2){
+                         $("#gen2").attr('disabled', true);
+                    }
+                    $(".users").click(function() {
+                        user = ($('input:radio[name=gen]:checked').val());
+                        alert(user);
+                        if (user == "tasat") {
+                            $("#username").attr("disabled", "disabled");
+                 //    window.location='<?php echo WEB_URL;?>cmessages/transsuggestions';
+                        }
+                        if (user == "client") {
+                            $("#username").removeAttr("disabled");
+                            $(function() {
+                             
+                            });
+                        }
+                        if (user == "translator") {
+                        
+                                $.post("<?php echo WEB_URL; ?>cmessages/transsuggestions", function(data, success) {
+                                    
+                       $('#username').val('<?php echo $row; ?>');                
+              
+            });
+                         
+                        }
+                    });
+                });
+
+</script>
